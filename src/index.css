@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Leaflet fix — el mapa necesita altura explícita */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+/* Fix z-index del popup de Leaflet vs navbar */
+.leaflet-popup {
+  z-index: 10;
+}
